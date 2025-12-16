@@ -43,7 +43,10 @@ function handleLogout() {
             </template>
             <template v-else>
                 <li>
-                    <RouterLink to="/crear-publicacion" class="hover:bg-white/5 p-2 rounded-md">Crear publicación</RouterLink>
+                    <RouterLink to="/crear-publicacion">Crear publicación</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/chat">Chat</RouterLink>
                 </li>
                 <li>
                     <RouterLink to="/chat" class="hover:bg-white/5 p-2 rounded-md">Chat</RouterLink>

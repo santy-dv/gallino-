@@ -59,7 +59,7 @@ onMounted(async () => {
         <hr class="my-6">
         
         <section>
-            <h2 class="mb-4 text-2xl font-bold text-blue-100">Publicaciones de {{ user.display_name ?? user.email }}</h2>
+            <h2 class="mb-4 text-2xl font-bold">Publicaciones de {{ user.display_name ?? user.email }}</h2>
 
             <div v-if="loadingPosts">
                 <AppLoading />

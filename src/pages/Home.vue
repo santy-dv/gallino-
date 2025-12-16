@@ -29,18 +29,18 @@ onMounted(async () => {
 
     <ol 
         v-else-if="posts.length > 0"
-        class="flex flex-col items-stretch gap-6 mt-6"
+        class="flex flex-col items-stretch gap-6"
     >
         <li
             v-for="post in posts"
             :key="post.id"
-            class="p-4 border-2 shadow-md bg-slate-800 rounded-xl"
+            class="p-4 border border-gray-300 rounded shadow-md bg-white"
         >
-            <div class="mb-2 text-sm text-gray-400">
+            <div class="mb-2 text-sm text-gray-600">
                 Publicado por: 
                 <RouterLink
                     :to="`/usuario/${post.user_id}`"
-                    class="font-semibold text-blue-500 underline"
+                    class="font-bold text-blue-700 underline"
                 >
                     {{ post.user_display_name ?? post.user_email }}
                 </RouterLink>
