@@ -46,18 +46,9 @@ onUnmounted(() => unsubscribeFromAuth());
 
     <form 
         action="#"
-        @submit.prevent="handleSubmit"
+        @submit.prevent="handleSubmit" class="text-blue-100 text-center"
     >
-        <div class="mb-4">
-            <label for="bio" class="block mb-1">Biografía</label>
-            <textarea
-                id="bio"
-                class="w-100 px-2 py-1 border border-gray-400 rounded read-only:bg-gray-200"
-                :readonly="loading"
-                v-model="userForm.bio"
-            ></textarea>
-        </div>
-        <div class="mb-4">
+        <div class="mb-8">
             <label for="display_name" class="block mb-1">Nombre</label>
             <input
                 type="text"
@@ -67,7 +58,16 @@ onUnmounted(() => unsubscribeFromAuth());
                 v-model="userForm.display_name"
             >
         </div>
-        <div class="mb-4">
+        <div class="mb-8">
+            <label for="bio" class="block mb-1">Biografía</label>
+            <textarea
+                id="bio"
+                class="w-100 px-2 py-1 border border-gray-400 rounded read-only:bg-gray-200"
+                :readonly="loading"
+                v-model="userForm.bio"
+            ></textarea>
+        </div>
+        <div class="mb-8">
             <label for="career" class="block mb-1">Carrera</label>
             <input
                 type="text"

@@ -89,24 +89,24 @@ function useLoginForm(router) {
 
     <form 
         action="#"
-        @submit.prevent="handleSubmit"
+        @submit.prevent="handleSubmit" class="text-center mb-10"
     >
         <div class="mb-4">
-            <label for="email" class="block mb-1">Email</label>
+            <label for="email" class="block mb-1 text-blue-50">Email</label>
             <input
                 type="email"
                 id="email"
-                class="w-100 px-2 py-1 border border-gray-400 rounded read-only:bg-gray-200"
+                class="w-100 px-2 py-1 border border-gray-400 read-only:bg-gray-200 rounded-xl"
                 :readonly="loading"
                 v-model="user.email"
             >
         </div>
-        <div class="mb-4">
-            <label for="password" class="block mb-1">Contraseña</label>
+        <div class="mb-8">
+            <label for="password" class="block mb-1 text-blue-50">Contraseña</label>
             <input
                 type="password"
                 id="password"
-                class="w-100 px-2 py-1 border border-gray-400 rounded read-only:bg-gray-200"
+                class="w-100 px-2 py-1 border border-gray-400 rounded-xl read-only:bg-gray-200"
                 :readonly="loading"
                 v-model="user.password"
             >
@@ -133,4 +133,12 @@ function useLoginForm(router) {
             Ingresar
         </AppButton>
     </form>
+    
+    <div class="mb-4 text-center text-blue-100">
+        ¿No tienes una cuenta? ¡Crea una!
+    </div>
+    <div class="text-center">
+        <RouterLink to="/crear-cuenta" class="bg-white/5 hover:bg-white/10 p-2 rounded-md text-blue-100">Crear cuenta</RouterLink>
+    </div>
+    
 </template>

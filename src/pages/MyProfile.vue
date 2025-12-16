@@ -27,7 +27,7 @@ const { user } = useAuthState();
 </script>
 
 <template>
-    <div class="flex gap-4">
+    <div class="flex gap-4 bg-white/4 px-10 py-10 rounded-xl">
         <div>
             <div class="flex gap-4 items-end">
                 <AppH1>Mi perfil</AppH1>
@@ -35,15 +35,15 @@ const { user } = useAuthState();
                 <RouterLink to="/mi-perfil/editar/avatar" class="mb-4 text-blue-700 underline">Editar mi foto</RouterLink>
             </div>
 
-            <div class="ms-4 my-6 text-gray-700 italic">{{ user.bio ?? 'Sin biografía...' }}</div>
+            <div class="ms-4 my-6 text-gray-500 italic">{{ user.bio ?? 'Sin biografía...' }}</div>
 
-            <dl>
+            <dl class="text-blue-100">
                 <dt class="font-bold">Email</dt>
-                <dd class="mb-2">{{ user.email }}</dd>
+                <dd class="mb-4">{{ user.email }}</dd>
                 <dt class="font-bold">Nombre</dt>
-                <dd class="mb-2">{{ user.display_name ?? 'Sin especificar...' }}</dd>
+                <dd class="mb-4">{{ user.display_name ?? 'Sin especificar...' }}</dd>
                 <dt class="font-bold">Carrera</dt>
-                <dd class="mb-2">{{ user.career ?? 'Sin especificar...' }}</dd>
+                <dd class="mb-4">{{ user.career ?? 'Sin especificar...' }}</dd>
             </dl>
         </div>
         <div>

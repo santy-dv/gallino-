@@ -102,13 +102,13 @@ onUnmounted(() => {
 <template>
     <AppH1>Editar mi foto de perfil</AppH1>
 
-    <div class="flex gap-4">
+    <div class="flex gap-4 text-center text-blue-100">
         <form 
             action="#"
             class="w-1/2"
             @submit.prevent="handleSubmit"
         >
-            <div class="mb-4">
+            <div class="mb-6">
                 <label for="avatar" class="block mb-1">Foto</label>
                 <input
                     type="file"
@@ -131,7 +131,7 @@ onUnmounted(() => {
                 :src="imageData.preview"
                 alt=""
             >
-            <p v-else>Seleccioná una imagen</p>
+            <p v-else class="text-gray-500">Seleccioná una imagen</p>
         </div>
     </div>
 </template>

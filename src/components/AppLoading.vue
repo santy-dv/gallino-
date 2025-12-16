@@ -1,5 +1,5 @@
 <template>
-    <div class="loader">
+    <div class="loader text-center">
         <div class="sr-only">Cargando...</div>
     </div>
 </template>

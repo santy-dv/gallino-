@@ -29,7 +29,7 @@ import AppNavbar from './AppNavbar.vue';
 
 <template>
     <AppNavbar />
-    <main class="container p-4 mx-auto">
+    <main class="container p-4 mx-auto bg-slate-950">
         <slot />
     </main>
     <AppFooter />

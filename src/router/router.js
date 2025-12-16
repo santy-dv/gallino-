@@ -10,7 +10,8 @@ import MyProfileEdit from "../pages/MyProfileEdit.vue";
 import MyProfileEditAvatar from "../pages/MyProfileEditAvatar.vue";
 import UserProfile from "../pages/UserProfile.vue";
 import PrivateChat from "../pages/PrivateChat.vue";
-
+import NewPost from "../pages/NewPost.vue";
+import CreatePost from "../pages/CreatePost.vue";
 // Definimos la lista de rutas.
 // Esto se logra con un array de objetos "Route".
 // Este objeto tiene, al menos, 2 propiedades:
@@ -28,6 +29,7 @@ const routes = [
     { path: '/mi-perfil/editar/avatar', component: MyProfileEditAvatar,  meta: { requiresAuth: true, }, },
     { path: '/usuario/:id',             component: UserProfile,  meta: { requiresAuth: true, }, },
     { path: '/usuario/:id/chat',        component: PrivateChat,  meta: { requiresAuth: true, }, },
+    { path: '/crear-publicacion',       component: CreatePost, meta: { requiresAuth: true, }, },
 ];
 
 // createRouter crea el Router. Recibe un objeto con 2 propiedades:

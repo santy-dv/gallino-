@@ -2,8 +2,9 @@
 import { createClient } from '@supabase/supabase-js';
 
 // Preparamos las credenciales de nuestro backend.
-const supabaseUrl = "https://hdmfyvciqpowpqxbvgqm.supabase.co";
-const supabaseKey = "sb_publishable_Hwq61X3H45TktWLhPmzR_w_S7CI9_8k";
+const supabaseUrl ='https://irlbhgrbgprpzcpbvzrd.supabase.co'
+ ;
+const supabaseKey = "sb_publishable_0NgeI1uK8J4mzaHVWVA-ig_9fqyl7jP";
 
 // Creamos la instancia del cliente de Supabase, y la exportamos.
 export const supabase = createClient(supabaseUrl, supabaseKey);
